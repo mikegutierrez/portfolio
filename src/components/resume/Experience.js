@@ -12,6 +12,7 @@ class Experience extends Component {
 			location: PropTypes.string.isRequired,
 			dates: PropTypes.string.isRequired,
 			tasks: PropTypes.array.isRequired,
+			logo: PropTypes.string,
 			classes: PropTypes.array
 		};
 	}
@@ -23,6 +24,7 @@ class Experience extends Component {
 			location: '',
 			dates: '',
 			tasks: [],
+			logo: '',
 			classes: []
 		};
 	}
@@ -50,7 +52,7 @@ class Experience extends Component {
 			<div>
 				<div className="row margin-top margin-bottom-m">
 					<div className="col-md-1">
-						<Logo title={this.props.company} />
+						<Logo icon={this.props.logo} />
 					</div>
 					<div className="col-md-11 margin-bottom-m">
 						<h5 className="fw-600">{this.props.title}</h5>

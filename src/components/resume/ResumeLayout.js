@@ -25,6 +25,7 @@ class ResumeLayout extends Component {
 						location={position.location}
 						dates={position.dates}
 						tasks={position.tasks}
+						logo={position.logo}
 						classes={[(index === lastPosition ? '' : 'divider-line')]}
 						key={index}
 					/>
@@ -41,6 +42,7 @@ class ResumeLayout extends Component {
 						school={institution.school}
 						degrees={institution.degrees}
 						years={institution.years}
+						logo={institution.logo}
 						key={index}
 					/>
 				);

@@ -1,3 +1,6 @@
+import logoSH from '../../../assets/images/logo-SH.png';
+import logoLAI from '../../../assets/images/logo-LAI.png';
+
 export const experience = [
 	{
 		title: 'Front End Software Engineer',
@@ -12,7 +15,8 @@ export const experience = [
 			'Contributed to a proprietary React component library used across multiple products',
 			'Wrote unit tests using Enzyme',
 			'Participated in Agile, attending scrum, sprint planning and retroactive meetings'
-		]
+		],
+		logo: logoSH
 
 	},
 	{
@@ -26,7 +30,8 @@ export const experience = [
 			'Encouraged A2 team to expand their development experience by incentivizing the completion of education programs covering Javascript, CSS and Git',
 			'Expanded A2 team\'s responsibilities to include group collaborative projects where the team refreshed the SteelHouse creative demo site and built a creative brief database',
 			'Coded prototype ad units to improve A2   and teamed up with software engineers to incorporate new features into the language'
-		]
+		],
+		logo: logoSH
 
 	},
 	{
@@ -41,7 +46,8 @@ export const experience = [
 			'Designed and developed A2 demo website using HTML, CSS and JQuery',
 			'Collaborated with Art Director and Creative Director to set design standards and create internal workflows for ad unit testing and development',
 			'Created archive for all code developed in A2 to serve as a reference library for developers'
-		]
+		],
+		logo: logoSH
 
 	},
 	{
@@ -60,7 +66,8 @@ export const experience = [
 			'Customized CRM dashboards for sales, events, and marketing teams',
 			'Collaborated with talent to create and update marketing material',
 			'Compiled weekly sales estimate reports and end of week sales and marketing reports'
-		]
+		],
+		logo: logoLAI
 
 	}
 ];

@@ -8,7 +8,8 @@ class Education extends Component {
 		return {
 			school: PropTypes.string.isRequired,
 			degrees: PropTypes.string.isRequired,
-			years: PropTypes.string.isRequired
+			years: PropTypes.string.isRequired,
+			logo: PropTypes.string
 		};
 	}
 
@@ -16,7 +17,8 @@ class Education extends Component {
 		return {
 			school: '',
 			degrees: '',
-			years: ''
+			years: '',
+			logo: ''
 		};
 	}
 
@@ -24,7 +26,7 @@ class Education extends Component {
 		return (
 			<div className="row">
 				<div className="col-md-1">
-					<Logo title={this.props.school} />
+					<Logo icon={this.props.logo} />
 				</div>
 				<div className="col-md-11">
 					<h5 className="fw-600">{this.props.school}</h5>
