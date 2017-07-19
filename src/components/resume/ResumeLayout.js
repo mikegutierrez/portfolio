@@ -69,6 +69,7 @@ class ResumeLayout extends Component {
 		const experience = this.mapExperience();
 		const education = this.mapEducation();
 		const skills = this.mapSkills();
+
 		return (
 			<div id="resume">
 				<div className="row margin-bottom-lg section">
@@ -78,7 +79,7 @@ class ResumeLayout extends Component {
 							className="inline-block pull-right"
 							target="_blank"
 							method="get"
-							action="../../assets/documents/Gutierrez_Mike_Resume_2017.pdf"
+							action="/resume"
 						>
 							<button className="btn btn-primary" type="submit">Download Resume</button>
 						</form>
