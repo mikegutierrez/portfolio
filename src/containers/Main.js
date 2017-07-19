@@ -2,6 +2,10 @@ import React, { Component, PropTypes } from 'react';
 import { autoBindMethods } from '../helpers/autoBindMethods';
 import bindMapComponent from '../helpers/mapStateActionsToProps';
 
+// Global components
+import Header from '../components/global/Header';
+import Footer from '../components/global/Footer';
+
 import * as Actions from '../actions';
 
 class Main extends Component {
@@ -25,17 +29,19 @@ class Main extends Component {
 	render() {
 		return (
 			<div>
-				<div>
+				<Header/>
+				<div className="container margin-top-lg">
 					{
-					React.cloneElement(
-						this.props.children,
-						{ ...this.props }
-					)
-				}
+						React.cloneElement(
+							this.props.children,
+							{ ...this.props }
+						)
+					}
 				</div>
+				<Footer/>
 			</div>
 		);
 	}
 }
 
-export default bindMapComponent(Main)(Actions, ['counter']);
+export default bindMapComponent(Main)(Actions, []);

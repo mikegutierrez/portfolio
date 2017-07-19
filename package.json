@@ -4,8 +4,7 @@
   "description": "express react redux react-router webpack portfolio and resume website",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webpack": "webpack"
   },
   "author": "Mike Gutierrez",
   "license": "ISC",
@@ -17,6 +16,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "bootstrap": "^3.3.7",
+    "classnames": "^2.2.5",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.4",
     "eslint": "^4.2.0",
@@ -33,6 +33,7 @@
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
     "lodash": "^4.17.4",
+    "moment": "^2.18.1",
     "path": "^0.12.7",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -41,6 +42,7 @@
     "react-router-redux": "^4.0.8",
     "redux": "^3.7.2",
     "style-loader": "^0.18.2",
+    "svgo": "^0.7.2",
     "url-loader": "^0.5.9",
     "webpack": "^3.3.0"
   }

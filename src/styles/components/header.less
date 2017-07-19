@@ -1,0 +1,86 @@
+#header {
+	position: relative;
+	height: 300px;
+	background: black;
+	overflow: hidden;
+
+	.background {
+		filter: alpha(opacity=50);
+		-webkit-opacity: 0.5;
+		opacity: 0.5;
+		-webkit-transition: background .7s;
+		transition: background .7s;
+	}
+
+	.bg-code {
+		height: inherit;
+		background: url(../../assets/images/bg-code-2.png) no-repeat center -400px fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-webkit-filter: blur(1px);
+		filter: blur(1px);
+	}
+
+	.bg-mountains {
+		height: inherit;
+		background: url(../../assets/images/bg-mountains.png) no-repeat center -400px fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+	}
+
+	.profile {
+		position: absolute;
+		top:0;
+		left: 0;
+		height: inherit;
+		width: 100%;
+
+		.container {
+			height: inherit;
+		}
+	}
+
+	.profile-card {
+		margin-top: 90px;
+
+		/* Extra Small Devices, Phones */
+		@media only screen and (max-width : 490px) {
+			margin-top: 50px;
+			margin-left: 5px;
+		}
+	}
+
+	.name-title {
+		position: relative;
+		top: -15px;
+
+		/* Extra Small Devices, Phones */
+		@media only screen and (max-width : 490px) {
+			top: 0;
+			left: -15px;
+		}
+
+		h3, h4 {
+			margin: 0
+		}
+	}
+
+	.photo {
+		position: relative;
+		left: -15px;
+		width: 176px;
+		height: 176px;
+		// border-radius: 50%;
+		overflow: hidden;
+		border: 3px solid @gr3;
+
+		img {
+			position: relative;
+			left: -60px;
+			top: -15px;
+		}
+	}
+
+}

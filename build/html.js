@@ -60,18 +60,18 @@
 /******/ 	__webpack_require__.p = "build/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 298);
+/******/ 	return __webpack_require__(__webpack_require__.s = 428);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 298:
+/***/ 428:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\" />\n\t\t<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t\t<title>Mike Gutierrez</title>\n\t</head>\n\t<body>\n\t\t<div id=\"app\"></div>\n\t</body>\n</html>\n";
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\" />\n\t\t<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t\t<link rel=\"shortcut icon\" href=\"favicon.ico\">\n\t\t<title>Mike Gutierrez</title>\n\t</head>\n\t<body>\n\t\t<div id=\"app\"></div>\n\t</body>\n</html>\n";
 
 /***/ })
 
