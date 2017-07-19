@@ -1,0 +1,101 @@
+{
+    "extends": "google",
+
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import",
+        "jasmine",
+        "you-dont-need-lodash-underscore"
+    ],
+
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jasmine": true,
+        "node": true,
+        "mocha": true
+    },
+
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+
+    "globals": {
+        "TYPES": true,
+        "logInfo": true,
+        "logWarn": true,
+        "logError": true
+    },
+
+    "rules": {
+        "switch-colon-spacing": "off",
+        "indent": [error, tab, { SwitchCase: 1 }],
+        "max-len": [error, {
+                "code": 120,
+                "comments": 200,
+                "ignoreUrls": true
+            }
+        ],
+        "camelcase": [error, { properties: never }],
+        "new-cap": [error, { capIsNewExceptions: [http.Server] }],
+        "object-curly-spacing": [error, always],
+        "global-require": 0,
+        "no-underscore-dangle": 0,
+        "no-tabs": 0,
+        "react/prop-types": error,
+        "react/jsx-indent": [2, tab],
+        "react/jsx-indent-props": [2, tab],
+        "react/jsx-filename-extension": [1, { extensions: [.js, .jsx] }],
+        "react/jsx-uses-react": error,
+        "react/jsx-uses-vars": error,
+        "you-dont-need-lodash-underscore/concat": 2,
+        "you-dont-need-lodash-underscore/fill": 2,
+        "you-dont-need-lodash-underscore/find": 2,
+        "you-dont-need-lodash-underscore/detect": 2,
+        "you-dont-need-lodash-underscore/find-index": 2,
+        "you-dont-need-lodash-underscore/index-of": 2,
+        "you-dont-need-lodash-underscore/join": 2,
+        "you-dont-need-lodash-underscore/last-index-of": 2,
+        "you-dont-need-lodash-underscore/reverse": 2,
+        "you-dont-need-lodash-underscore/each": 2,
+        "you-dont-need-lodash-underscore/for-each": 2,
+        "you-dont-need-lodash-underscore/every": 2,
+        "you-dont-need-lodash-underscore/all": 2,
+        "you-dont-need-lodash-underscore/filter": 2,
+        "you-dont-need-lodash-underscore/select": 2,
+        "you-dont-need-lodash-underscore/includes": 2,
+        "you-dont-need-lodash-underscore/contains": 2,
+        "you-dont-need-lodash-underscore/map": 2,
+        "you-dont-need-lodash-underscore/collect": 2,
+        "you-dont-need-lodash-underscore/reduce": 2,
+        "you-dont-need-lodash-underscore/inject": 2,
+        "you-dont-need-lodash-underscore/foldl": 2,
+        "you-dont-need-lodash-underscore/reduce-right": 2,
+        "you-dont-need-lodash-underscore/foldr": 2,
+        "you-dont-need-lodash-underscore/size": 2,
+        "you-dont-need-lodash-underscore/some": 2,
+        "you-dont-need-lodash-underscore/any": 2,
+        "you-dont-need-lodash-underscore/is-nan": 2,
+        "you-dont-need-lodash-underscore/extend-own": 2,
+        "you-dont-need-lodash-underscore/assign": 2,
+        "you-dont-need-lodash-underscore/keys": 2,
+        "you-dont-need-lodash-underscore/repeat": 2,
+        "you-dont-need-lodash-underscore/to-lower": 2,
+        "you-dont-need-lodash-underscore/to-upper": 2,
+        "you-dont-need-lodash-underscore/trim": 2,
+        "comma-dangle": ["error", "never"],
+        "require-jsdoc": ["error", {
+        "require": {
+            "FunctionDeclaration": true,
+            "MethodDefinition": false,
+            "ClassDeclaration": false
+        }
+    }]
+    }
+}
