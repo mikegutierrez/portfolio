@@ -1,7 +1,10 @@
 const path = require('path');
+const favicon = require('serve-favicon')
 const express = require('express');
 
 const app = express();
+
+app.use(favicon(path.join(__dirname, '/build/assets/images', 'favicon.ico')));
 
 app.use('/build', express.static(path.join(__dirname, '/build/')));
 

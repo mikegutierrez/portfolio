@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
-import './assets/images/favicon.ico';
 
 // Main route depencies
 import Main from './containers/Main';

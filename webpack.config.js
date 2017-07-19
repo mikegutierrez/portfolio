@@ -33,7 +33,7 @@ module.exports = {
 			{
 				exclude: /node_modules/,
 				loader: 'file-loader?name=[name].[ext]', // keeps og filename
-				test: /\.(ico|jpg)$/
+				test: /\.jpg$/
 			},
 			{
 				exclude: /node_modules/,
