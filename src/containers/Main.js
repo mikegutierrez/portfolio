@@ -4,6 +4,7 @@ import bindMapComponent from '../helpers/mapStateActionsToProps';
 
 // Global components
 import Header from '../components/global/Header';
+import Menu from '../components/global/Menu';
 import Footer from '../components/global/Footer';
 
 import * as Actions from '../actions';
@@ -30,7 +31,8 @@ class Main extends Component {
 		return (
 			<div>
 				<Header/>
-				<div className="container margin-top-lg">
+				<div className="container">
+					<Menu />
 					{
 						React.cloneElement(
 							this.props.children,
