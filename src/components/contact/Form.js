@@ -94,6 +94,7 @@ class Form extends Component {
 					<input
 						ref="name"
 						id="input-name"
+						name="name"
 						className="form-control"
 						type="text"
 						placeholder="Name"
@@ -108,6 +109,7 @@ class Form extends Component {
 					<input
 						ref="email"
 						id="input-email"
+						name="email"
 						className="form-control"
 						type="email"
 						placeholder="Email"
@@ -122,6 +124,7 @@ class Form extends Component {
 					<textarea
 						ref="message"
 						id="input-message"
+						name="message"
 						className="form-control"
 						rows="3"
 						onChange={() => this.onInputChange('message')}

@@ -6,13 +6,13 @@ import profilephoto from '../../assets/images/mike.jpg';
 class Header extends Component {
 	static get propTypes() {
 		return {
-			location: PropTypes.object
+			location: PropTypes.func
 		};
 	}
 
 	static get propTypes() {
 		return {
-			location: '/'
+			location: () => {}
 		};
 	}
 

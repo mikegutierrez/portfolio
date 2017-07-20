@@ -2,6 +2,7 @@ const path = require('path');
 const favicon = require('serve-favicon');
 const express = require('express');
 const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 
 const app = express();
 const router = express.Router();
@@ -19,13 +20,18 @@ app.get('*', (req, res) => {
 });
 
 // Contact form
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 const handleContact = function handleContact(req, res) {
 	let mailOptions = {
 		from: 'contactmikegutierrez@gmail.com',
 		to: 'mikeg610@gmail.com',
-		subject: 'Email Example',
-		// text: 'string'
-		html: '<b>Hello world ✔</b>'
+		subject: 'PORTFOLIO EMAIL INQUIERY',
+		html:
+			`<div style="display:block;"><b>FROM: </b> ${req.body.name}</div>
+			<div style="display:block;"><b>EMAIL: </b> ${req.body.email}</div>
+			<div style="display:block;"><b>MESSAGE: </b> ${req.body.message}</div>`
 	};
 
 	let transporter = nodemailer.createTransport({
