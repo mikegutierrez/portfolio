@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { autoBindMethods } from '../../helpers/autoBindMethods';
 import classnames from 'classnames';
+import axios from 'axios';
 
 class Form extends Component {
 	constructor(props) {
@@ -11,7 +12,8 @@ class Form extends Component {
 			errors: {},
 			name: '',
 			email: '',
-			message: ''
+			message: '',
+			success: false
 		};
 		autoBindMethods(this);
 	}
@@ -74,20 +76,31 @@ class Form extends Component {
 
 	onSubmit() {
 		this.setState({ loading: true }, () => {
-			const request = new XMLHttpRequest();
 			const params = {
 				name: this.state.name,
 				email: this.state.email,
 				message: this.state.message
 			};
-
-			request.open('POST', '/contactmike');
-			request.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
-			request.send(JSON.stringify(params));
+			axios.post('/contactmike', params)
+				.then((response) => {
+					this.setState({ loading: false, success: true });
+				})
+				.catch((response) => {
+					console.log('error');
+					this.setState({ loading: false });
+				});
 		});
 	}
 
-	render() {
+	renderSuccess() {
+		return (
+			<div>
+				<h6>Thanks! I'll be in touch soon.</h6>
+			</div>
+		);
+	}
+
+	renderForm() {
 		const { errors } = this.state;
 		return (
 			<form onKeyPress={this.onKeyPress}>
@@ -142,10 +155,18 @@ class Form extends Component {
 						onClick={this.onSubmit}
 						disabled={this.isDisabled()}
 					>
-						Submit
+						{this.state.loading ?'Sending...' : 'Submit' }
 					</button>
 				</div>
 			</form>
+		);
+	}
+
+	render() {
+		return (
+			<div>
+				{ this.state.success ? this.renderSuccess() : this.renderForm() }
+			</div>
 		);
 	}
 }

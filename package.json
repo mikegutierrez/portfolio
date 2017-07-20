@@ -9,6 +9,7 @@
   "author": "Mike Gutierrez",
   "license": "ISC",
   "devDependencies": {
+    "axios": "^0.16.2",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
@@ -35,7 +36,6 @@
     "less-loader": "^4.0.5",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
-    "node-fetch": "^1.7.1",
     "nodemailer": "^4.0.1",
     "path": "^0.12.7",
     "react": "^15.6.1",
