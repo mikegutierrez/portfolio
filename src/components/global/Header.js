@@ -1,12 +1,39 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
+import classnames from 'classnames';
 
 import profilephoto from '../../assets/images/mike.jpg';
 
 class Header extends Component {
+	static get propTypes() {
+		return {
+			location: PropTypes.object
+		};
+	}
+
+	static get propTypes() {
+		return {
+			location: '/'
+		};
+	}
+
+	handleBackground() {
+		const { pathname } = this.props.location;
+		switch (pathname) {
+			case '/':
+				return 'bg-code';
+
+			case '/contact':
+				return 'bg-mountains';
+
+			default:
+				return 'bg-code';
+		}
+	}
+
 	render() {
 		return (
 			<div id="header">
-				<div className="bg-code background"></div>
+				<div className={classnames('background ' + this.handleBackground())}></div>
 				<div className="profile">
 					<div className="container">
 						<div className="row profile-card">
