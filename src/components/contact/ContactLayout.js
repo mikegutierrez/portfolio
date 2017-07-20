@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 
+// Contact components
+import Form from './Form';
+
 class ContactLayout extends Component {
 	render() {
 		return (
 			<div>
 				<div className="row">
 					<div className="column column-12">
-						<h1>MY NAME MIKE</h1>
-						<p>GET IN TOUCH</p>
+						<Form />
 					</div>
 				</div>
 			</div>
