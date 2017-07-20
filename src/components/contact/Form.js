@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { autoBindMethods } from '../../helpers/autoBindMethods';
 import classnames from 'classnames';
 
@@ -31,13 +31,16 @@ class Form extends Component {
 
 	validate() {
 		const errors = {};
-
 		if (!this.state.name) {
 			errors.name = 'Name cannot be blank';
 		}
 
 		if (!this.state.email) {
 			errors.email = 'Email cannot be blank';
+		}
+
+		if (!/\w@\w+[\.][A-Za-z]{2,4}$/.test(this.state.email)) {
+			errors.email = 'Email is invalid';
 		}
 
 		if (!this.state.message) {
