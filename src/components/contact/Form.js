@@ -88,7 +88,7 @@ class Form extends Component {
 	render() {
 		const { errors } = this.state;
 		return (
-			<form onSubmit={this.onSubmit} onKeyPress={this.onKeyPress}>
+			<form onSubmit={this.onSubmit} onKeyPress={this.onKeyPress} method="post" action="/contactmike">
 				<div className={classnames('form-group ' + (errors.name ? 'has-error' : ''))}>
 					<label className="control-label" htmlFor="input-name">Name</label>
 					<input
@@ -133,8 +133,8 @@ class Form extends Component {
 				<div className="form-group">
 					<button
 						className="btn btn-primary"
-						type="button"
-						onClick={this.onSubmit}
+						type="submit"
+						onSubmit={this.onSubmit}
 						disabled={this.isDisabled()}
 					>
 						Submit
