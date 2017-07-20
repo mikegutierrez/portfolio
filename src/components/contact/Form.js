@@ -74,21 +74,23 @@ class Form extends Component {
 
 	onSubmit() {
 		this.setState({ loading: true }, () => {
+			const request = new XMLHttpRequest();
 			const params = {
 				name: this.state.name,
 				email: this.state.email,
 				message: this.state.message
 			};
 
-			console.log('onSubmit: ', params);
-			// This is where an object of info will be sent to the server
+			request.open('POST', '/contactmike');
+			request.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+			request.send(JSON.stringify(params));
 		});
 	}
 
 	render() {
 		const { errors } = this.state;
 		return (
-			<form onSubmit={this.onSubmit} onKeyPress={this.onKeyPress} method="post" action="/contactmike">
+			<form onKeyPress={this.onKeyPress}>
 				<div className={classnames('form-group ' + (errors.name ? 'has-error' : ''))}>
 					<label className="control-label" htmlFor="input-name">Name</label>
 					<input
@@ -137,7 +139,7 @@ class Form extends Component {
 					<button
 						className="btn btn-primary"
 						type="submit"
-						onSubmit={this.onSubmit}
+						onClick={this.onSubmit}
 						disabled={this.isDisabled()}
 					>
 						Submit
