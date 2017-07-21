@@ -7,6 +7,27 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
+
+		/* Small Devices, Tablets */
+		@media only screen and (max-width : 768px) {
+			position: relative;
+		}
+
+		/* iPads (landscape) ----------- */
+		@media only screen
+			and (min-device-width: 768px)
+			and (max-device-width: 1024px)
+			and (orientation : landscape) {
+			positon: relative;
+		}
+
+		/* iPads (portrait) ----------- */
+		@media only screen
+		and (min-device-width : 768px)
+		and (max-device-width : 1024px)
+		and (orientation : portrait) {
+			position: fixed;
+		}
 	}
 
 	/* Extra Small Devices, Phones */
