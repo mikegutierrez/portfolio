@@ -1,10 +1,17 @@
 #footer {
 	height: 95px;
+	min-width: 320px;
 
 	&.footer-fixed {
 		position: fixed;
 		right: 0;
 		bottom: 0;
 		left: 0;
+	}
+
+	/* Extra Small Devices, Phones */
+	@media only screen and (max-width : 490px) {
+		.mobile-break { display: block; }
+		.hidden-xs-mobile { display: none; }
 	}
 }
