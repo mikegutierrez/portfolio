@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { autoBindMethods } from '../../helpers/autoBindMethods';
 import classnames from 'classnames';
 
 import profilephoto from '../../assets/images/mike.jpg';
@@ -16,24 +17,18 @@ class Header extends Component {
 		};
 	}
 
-	handleBackground() {
-		const { pathname } = this.props.location;
-		switch (pathname) {
-			case '/':
-				return 'bg-code';
-
-			case '/contact':
-				return 'bg-mountains';
-
-			default:
-				return 'bg-code';
-		}
+	constructor(props) {
+		super(props);
+		autoBindMethods(this);
 	}
 
 	render() {
+		const headerStyle = classnames('background',
+		{ 'bg-code': this.props.location.pathname === '/' },
+		{ 'bg-mountains': this.props.location.pathname === '/contact' });
 		return (
 			<div id="header">
-				<div className={classnames('background ' + this.handleBackground())}></div>
+				<div className={headerStyle}></div>
 				<div className="profile">
 					<div className="container">
 						<div className="row profile-card">
