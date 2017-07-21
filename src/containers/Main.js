@@ -40,7 +40,7 @@ class Main extends Component {
 						)
 					}
 				</div>
-				<Footer/>
+				<Footer {...this.props}/>
 			</div>
 		);
 	}

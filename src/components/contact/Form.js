@@ -140,8 +140,8 @@ class Form extends Component {
 						ref="message"
 						id="input-message"
 						name="message"
-						className="form-control"
-						rows="3"
+						className="form-control resize-none"
+						rows="8"
 						onChange={() => this.onInputChange('message')}
 					></textarea>
 					<span className={classnames('help-block ' + (errors.message ? 'show' : 'hide'))}>
@@ -150,7 +150,7 @@ class Form extends Component {
 				</div>
 				<div className="form-group">
 					<button
-						className="btn btn-primary"
+						className="btn btn-primary btn-block btn-lg"
 						type="submit"
 						onClick={this.onSubmit}
 						disabled={this.isDisabled()}
