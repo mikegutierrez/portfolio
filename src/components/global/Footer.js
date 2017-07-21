@@ -27,13 +27,13 @@ class Footer extends Component {
 			'footer-fixed': this.props.location.pathname === '/contact'
 		});
 		return (
-			<div id="footer" className={footerStyle}>
+			<footer id="footer" className={footerStyle}>
 				<div className="small text-center vertically-center">
 					&copy; Copyright { currentYear } Mike Gutierrez. <span className="mobile-break">All rights reserved.</span>
 				<br className="hidden-xs-mobile"/>
 					View the code for this website on <a href="https://github.com/mikegutierrez/portfolio" target="_blank">Github</a>.
 				</div>
-			</div>
+			</footer>
 		);
 	}
 }

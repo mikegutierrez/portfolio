@@ -5,7 +5,7 @@ class Menu extends Component {
 	render() {
 		return (
 			<div id="menu">
-				<ul className="text-center">
+				<ul className="text-center text-uppercase">
 					<li><Link to="/">Resume</Link></li>
 					<li><Link to="/contact">Contact</Link></li>
 				</ul>

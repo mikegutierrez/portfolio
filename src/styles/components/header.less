@@ -63,13 +63,19 @@
 		}
 	}
 
-	.name-title {
+	.profile-info {
 		position: relative;
 		top: -15px;
 
+		h3, h4 { margin: 0 }
 
-		h3, h4 {
-			margin: 0
+		a {
+			color: @gr3;
+			&:hover { color: @gr2; }
+		}
+
+		.underline-s {
+			margin: 10px 0 !important;
 		}
 
 		/* Extra Small Devices, Phones */
@@ -82,12 +88,9 @@
 		}
 	}
 
-	.photo {
-		position: relative;
-		left: -15px;
+	.profile-photo {
 		width: 176px;
 		height: 176px;
-		// border-radius: 50%;
 		overflow: hidden;
 		border: 3px solid @gr3;
 
