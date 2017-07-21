@@ -5,6 +5,7 @@ import Form from './Form';
 
 class ContactLayout extends Component {
 	render() {
+		console.log('ContactLayout Props:  ', this.props);
 		return (
 			<div>
 				<div className="row center-content">
@@ -16,7 +17,7 @@ class ContactLayout extends Component {
 				</div>
 				<div className="row center-content">
 					<div className="col-md-5 col-sm-12 col-xs-12">
-						<Form formSuccess={this.props.actions.formSuccess()}/>
+						<Form formSuccess={this.props.actions.formSuccess}/>
 					</div>
 				</div>
 			</div>

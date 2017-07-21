@@ -6,13 +6,13 @@ import axios from 'axios';
 class Form extends Component {
 	static get propTypes() {
 		return {
-			formSuccess: PropTypes.object
+			formSuccess: PropTypes.func
 		};
 	}
 
 	static get defaultProps() {
 		return {
-			formSuccess: {}
+			formSuccess: () => {}
 		};
 	}
 
@@ -97,12 +97,12 @@ class Form extends Component {
 			axios.post('/contactmike', params)
 				.then((response) => {
 					this.setState({ loading: false, success: true });
+					this.props.formSuccess();
 				})
 				.catch((response) => {
 					console.log('error');
 					this.setState({ loading: false });
 				});
-			this.state.success ? this.props.formSuccess() : null;
 		});
 	}
 
