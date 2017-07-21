@@ -76,7 +76,7 @@ class ResumeLayout extends Component {
 					<div className="col-md-12">
 						<SectionTitle title="Experience" classes={['inline-block', 'margin-0']}/>
 						<form
-							className="inline-block pull-right"
+							className="inline-block pull-right hidden-xs"
 							target="_blank"
 							method="get"
 							action="/resume"
