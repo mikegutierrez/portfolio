@@ -3,9 +3,11 @@ const favicon = require('serve-favicon');
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const password = require('./config');
 
 const app = express();
 const router = express.Router();
+
 
 app.use(favicon(path.join(__dirname, '/build/assets/images', 'favicon.ico')));
 
@@ -38,7 +40,7 @@ const handleContact = function handleContact(req, res) {
 		service: 'Gmail',
 		auth: {
 			user: 'contactmikegutierrez@gmail.com',
-			pass: 'M1keistheb0ss'
+			pass: password.key
 		}
 	});
 
