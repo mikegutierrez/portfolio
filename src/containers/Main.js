@@ -46,4 +46,4 @@ class Main extends Component {
 	}
 }
 
-export default bindMapComponent(Main)(Actions, []);
+export default bindMapComponent(Main)(Actions, ['formSuccess']);

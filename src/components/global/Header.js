@@ -40,7 +40,7 @@ class Header extends Component {
 								<h4 className="text-white">Front End Software Engineer</h4>
 								<div className="underline-s hidden-xs"></div>
 								<ul className="text-white list-unstyled small fw-300 hidden-xs">
-									<li>View the code for this site on <a href="https://github.com/mikegutierrez/portfolio" target="_blank">Github</a></li>
+									<li>View the code for this website on <a href="https://github.com/mikegutierrez/portfolio" target="_blank">Github</a></li>
 									<li>Connect on <a href="https://www.linkedin.com/in/mikegutierrez/" target="_blank">LinkedIn</a></li>
 								</ul>
 							</div>

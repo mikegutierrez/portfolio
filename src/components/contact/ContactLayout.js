@@ -8,15 +8,15 @@ class ContactLayout extends Component {
 		return (
 			<div>
 				<div className="row center-content">
-					<div className="col-md-5 col-sm-12 col-xs-12  hidden-xs text-center">
-						Hey, thanks for visiting. Tell me about your next project.
-						Be sure to include as many details about the concept and
-						design as possible. The more, the better!
+					<div className="col-md-5 col-sm-12 col-xs-12  hidden-xs text-center margin-bottom">
+						{
+							this.props.formSuccess ? '' : 'Hey, thanks for visiting. Tell me about your next project. Be sure to include as many details about the concept and design as possible. The more, the better!'
+						}
 					</div>
 				</div>
 				<div className="row center-content">
 					<div className="col-md-5 col-sm-12 col-xs-12">
-						<Form />
+						<Form formSuccess={this.props.actions.formSuccess()}/>
 					</div>
 				</div>
 			</div>

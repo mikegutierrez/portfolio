@@ -1,9 +1,22 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { autoBindMethods } from '../../helpers/autoBindMethods';
 import classnames from 'classnames';
 import axios from 'axios';
 
 class Form extends Component {
+	static get propTypes() {
+		return {
+			formSuccess: PropTypes.object
+		};
+	}
+
+	static get defaultProps() {
+		return {
+			formSuccess: {}
+		};
+	}
+
+
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -89,12 +102,13 @@ class Form extends Component {
 					console.log('error');
 					this.setState({ loading: false });
 				});
+			this.state.success ? this.props.formSuccess() : null;
 		});
 	}
 
 	renderSuccess() {
 		return (
-			<div>
+			<div className="text-center">
 				<h6>Thanks! I'll be in touch soon.</h6>
 			</div>
 		);
