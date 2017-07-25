@@ -32,7 +32,7 @@ module.exports = {
 			},
 			{
 				exclude: /node_modules/,
-				loader: 'file-loader?name=[name].[ext]', // keeps og filename
+				loader: 'file-loader',
 				test: /\.jpg$/
 			},
 			{
