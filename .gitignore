@@ -9,3 +9,5 @@ node_modules
 .npm
 .eslintcache
 config.json
+node_modules
+node_modules

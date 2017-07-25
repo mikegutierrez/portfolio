@@ -9,8 +9,17 @@
   "author": "Mike Gutierrez",
   "license": "ISC",
   "devDependencies": {
+	"babel-cli": "^6.24.1",
+	"eslint": "^4.2.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jasmine": "^2.7.1",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.3.1"
+},
+  "dependencies": {
     "axios": "^0.16.2",
-    "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
@@ -21,13 +30,6 @@
     "classnames": "^2.2.5",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.4",
-    "eslint": "^4.2.0",
-    "eslint-config-google": "^0.9.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jasmine": "^2.7.1",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.1.0",
-    "eslint-plugin-you-dont-need-lodash-underscore": "^6.3.1",
     "express": "^4.15.3",
     "file-loader": "^0.11.2",
     "html-loader": "^0.4.5",
@@ -49,5 +51,8 @@
     "svgo": "^0.7.2",
     "url-loader": "^0.5.9",
     "webpack": "^3.3.0"
+},
+  "engines": {
+	  "node": "6.9.2"
   }
 }
