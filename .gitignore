@@ -5,7 +5,6 @@ npm-debug.log*
 build
 .npm
 .eslintcache
-config.json
 node_modules
 node_modules
 npm-debug.log
