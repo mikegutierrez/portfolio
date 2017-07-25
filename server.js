@@ -1,3 +1,4 @@
+const SERVER_PORT = process.env.PORT || 3000;
 const path = require('path');
 const favicon = require('serve-favicon');
 const express = require('express');
@@ -57,6 +58,6 @@ const handleContact = function handleContact(req, res) {
 app.use('/contactmike', router);
 router.post('/', handleContact);
 
-app.listen(3000, () => {
-	console.log('listening on port 3000');
+app.listen(SERVER_PORT, () => {
+	console.log(`listening on port ${SERVER_PORT}`);
 });
