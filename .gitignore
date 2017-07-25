@@ -1,14 +1,12 @@
 .DS_Store
 .DS_Store?
-Thumbs.db
 *.log
 npm-debug.log*
 build
-dist
-node_modules
 .npm
 .eslintcache
 config.json
 node_modules
 node_modules
 npm-debug.log
+/*.env
