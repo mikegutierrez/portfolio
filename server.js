@@ -3,7 +3,6 @@ const favicon = require('serve-favicon');
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-const password = require('./config');
 
 const app = express();
 const router = express.Router();
@@ -27,8 +26,8 @@ app.use(bodyParser.json());
 
 const handleContact = function handleContact(req, res) {
 	let mailOptions = {
-		from: 'contactmikegutierrez@gmail.com',
-		to: 'mikeg610@gmail.com',
+		from: process.env.MAIL_SENDER,
+		to: process.env.MAIL_RECEIVER,
 		subject: 'PORTFOLIO EMAIL INQUIERY',
 		html:
 			`<div style="display:block;"><b>FROM: </b> ${req.body.name}</div>
@@ -39,8 +38,8 @@ const handleContact = function handleContact(req, res) {
 	let transporter = nodemailer.createTransport({
 		service: 'Gmail',
 		auth: {
-			user: 'contactmikegutierrez@gmail.com',
-			pass: password.key
+			user: process.env.MAIL_SENDER,
+			pass: process.env.MAIL_SECRET
 		}
 	});
 

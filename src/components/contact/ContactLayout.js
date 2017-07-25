@@ -5,7 +5,6 @@ import Form from './Form';
 
 class ContactLayout extends Component {
 	render() {
-		console.log('ContactLayout Props:  ', this.props);
 		return (
 			<div>
 				<div className="row center-content">
