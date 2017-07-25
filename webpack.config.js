@@ -28,12 +28,7 @@ module.exports = {
 			},
 			{
 				loader: 'url-loader?limit=00000',
-				test: /\.(png|woff|woff2|eot|ttf|svg)$/
-			},
-			{
-				exclude: /node_modules/,
-				loader: 'file-loader',
-				test: /\.jpg$/
+				test: /\.(jpg|png|woff|woff2|eot|ttf|svg)$/
 			},
 			{
 				exclude: /node_modules/,
