@@ -7,6 +7,7 @@ class Menu extends Component {
 			<div id="menu">
 				<ul className="text-center text-uppercase">
 					<li><Link to="/">Resume</Link></li>
+					<li><Link to="/projects">Projects</Link></li>
 					<li><Link to="/contact">Contact</Link></li>
 				</ul>
 			</div>

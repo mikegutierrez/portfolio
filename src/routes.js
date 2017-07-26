@@ -9,8 +9,12 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import Main from './containers/Main';
 import ResumeLayout from './components/resume/ResumeLayout';
 
+// Projects route dependencies
+import ProjectsLayout from './components/projects/ProjectsLayout';
+
 // Contact route dependencies
 import ContactLayout from './components/contact/ContactLayout';
+
 
 const initializeStore = store();
 
@@ -21,6 +25,7 @@ class Handler extends React.Component {
 				<Router history={ browserHistory }>
 					<Route path="/" component={ Main }>
 						<IndexRoute component={ ResumeLayout }/>
+						<Route path="projects" component={ ProjectsLayout } />
 						<Route path="contact" component={ ContactLayout } />
 					</Route>
 					<Route path="*" onEnter={() => browserHistory.push('/')} />

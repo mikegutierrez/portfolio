@@ -40,6 +40,37 @@
 		}
 	}
 
+	.bg-animated {
+		background: linear-gradient(180deg, #0e96b6, #1f2b28);
+		-webkit-background-size: 400% 400%;
+		-moz-background-size: 400% 400%;
+		background-size: 400% 400%;
+		height: 300px;
+
+
+		-webkit-animation: animatedGradient 20s ease infinite;
+		-moz-animation: animatedGradient 20s ease infinite;
+		animation: animatedGradient 20s ease infinite;
+
+		@-webkit-keyframes animatedGradient {
+			0% { background-position: 25% 0 }
+			50% { background-position: 75% 100% }
+			100% { background-position: 25% 0 }
+		}
+
+		@-moz-keyframes animatedGradient {
+			0% { background-position: 25% 0 }
+			50% { background-position: 75% 100% }
+			100% { background-position: 25% 0 }
+		}
+
+		@keyframes animatedGradient {
+			0% { background-position: 25% 0 }
+			50% { background-position: 75% 100% }
+			100% { background-position: 25% 0 }
+		}
+	}
+
 	.profile {
 		position: absolute;
 		top:0;
