@@ -1,0 +1,47 @@
+.project {
+	.tags {
+		a {
+			position: relative;
+			padding: 7px @space-s @space-s;
+			margin: 0 @space-s;
+			display: inline-block;
+
+			&::before, &::after {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: @gr0;
+				opacity: 0.2;
+				content: '';
+
+				-webkit-transition: -webkit-transform 0.3s;
+				-moz-transition: -moz-transform 0.3s;
+				transition: transform 0.3s;
+
+				-webkit-transform: scale(0.65);
+				-moz-transform: scale(0.65);
+				transform: scale(0.65);
+			}
+
+			&::after {
+				opacity: 0;
+				transition: top 0.3s, opacity 0.3s, transform 0.3s;
+			}
+
+			&:hover, &:focus {
+				&::before, &::after {
+					-webkit-transform: scale(0.85);
+					-moz-transform: scale(0.85);
+					transform: scale(0.85);
+				}
+
+				&::after {
+					top: 0;
+					opacity: 0.2;
+				}
+			}
+		}
+	}
+}
