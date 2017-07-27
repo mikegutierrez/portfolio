@@ -29,7 +29,6 @@ export const projects = [
 		],
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 		image: projectTwo,
-		url: 'http://google.com',
 		github: 'https://github.com/mikegutierrez'
 
 	},
@@ -45,7 +44,15 @@ export const projects = [
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 		image: projectThree,
 		url: 'http://google.com',
-		github: 'https://github.com/mikegutierrez'
+	},
+	{
+		title: 'Project Four',
+		stack: [
+			{ name: 'CSS3', url: 'https://facebook.github.io/react/' },
+			{ name: 'JQuery', url: 'http://redux.js.org/' },
+		],
+		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+		image: projectTwo
 
 	}
 ];

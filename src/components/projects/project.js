@@ -6,7 +6,6 @@ import SectionTitle from '../global/SectionTitle';
 import { projects } from './data/projects';
 
 class Project extends Component {
-
 	renderProjects() {
 		return (
 			projects.map((project, index) => {
@@ -16,14 +15,20 @@ class Project extends Component {
 							<SectionTitle title={project.title} classes={['inline-block']}/>
 						</div>
 						<div className="col-md-4 col-sm-12 margin-bottom">
-							<img src={project.image} width="220"/>
+							<div className="project-image">
+								<img src={project.image} />
+								<div className="caption">
+									<div className="h6 text-uppercase margin-0">{project.title}</div>
+								</div>
+								<a href={project.url} target="_blank"></a>
+							</div>
 						</div>
 						<div className="col-md-8 col-sm-12">
-							<div className="tags">
+							<div className="project-tags">
 								{
-								project.stack.map((tech, index) => {
-									return <a href={tech.url} target="_blank" key={index}>{tech.name}</a>;
-								})
+									project.stack.map((tech, index) => {
+										return <a href={tech.url} target="_blank" key={index}>{tech.name}</a>;
+									})
 								}
 							</div>
 							<div className="row margin-top">
@@ -32,16 +37,20 @@ class Project extends Component {
 							<div className="row margin-top-m">
 								<div className="col-md-12">
 									<ul className="list-inline">
+										{project.url &&
 										<li>
 											<a href={project.url} target="_blank" className="small margin-right-lg">
 												Visit the project &gt;&gt;
 											</a>
 										</li>
+										}
+										{project.github &&
 										<li>
 											<a href={project.github} target="_blank" className="small">
 												View the code on Github &gt;&gt;
 											</a>
 										</li>
+										}
 									</ul>
 								</div>
 							</div>
@@ -52,7 +61,7 @@ class Project extends Component {
 		);
 	}
 	render() {
-		const content = projects.length ? this.renderProjects() : {};
+		const content = projects.length ? this.renderProjects() : '';
 		return <div>{ content }</div>;
 	}
 }
