@@ -46,28 +46,29 @@ class Experience extends Component {
 	}
 
 	render() {
-		const tasks = this.mapTasks(this.props.tasks);
-		const classes = this.props.classes.join(' ');
+		const { title, company, location, dates, tasks, logo, classes } = this.props;
+		const taskList = this.mapTasks(tasks);
+		const classList = classes.join(' ');
 		return (
 			<div>
 				<div className="row margin-top margin-bottom-m">
 					<div className="col-md-1">
-						<Logo icon={this.props.logo} />
+						<Logo icon={logo} />
 					</div>
 					<div className="col-md-11 margin-bottom-m">
-						<h5 className="fw-600">{this.props.title}</h5>
-						<h5 className="fw-400">{this.props.company}</h5>
-						<h6 className="fw-400">{this.props.dates}</h6>
-						<h6 className="fw-400">{this.props.location}</h6>
+						<h5 className="fw-600">{title}</h5>
+						<h5 className="fw-400">{company}</h5>
+						<h6 className="fw-400">{dates}</h6>
+						<h6 className="fw-400">{location}</h6>
 					</div>
 				</div>
 				<div className="row">
 					<div className="col-md-1"></div>
 					<div className="col-md-11">
 						<ul className={classnames('list-unstyled', {
-							[classes]: classes
+							[classes]: classList
 						})}>
-							{ tasks }
+							{ taskList }
 						</ul>
 					</div>
 				</div>
