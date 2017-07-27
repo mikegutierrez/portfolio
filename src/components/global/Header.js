@@ -23,10 +23,11 @@ class Header extends Component {
 	}
 
 	render() {
+		const { location } = this.props;
 		const headerStyle = classnames('background',
-		{ 'bg-code': this.props.location.pathname === '/' },
-		{ 'bg-animated': this.props.location.pathname === '/projects' },
-		{ 'bg-mountains': this.props.location.pathname === '/contact' });
+		{ 'bg-code': location.pathname === '/' },
+		{ 'bg-animated': location.pathname === '/projects' },
+		{ 'bg-mountains': location.pathname === '/contact' });
 		return (
 			<div id="header">
 				<div className={headerStyle}></div>

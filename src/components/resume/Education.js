@@ -23,15 +23,16 @@ class Education extends Component {
 	}
 
 	render() {
+		const { school, degrees, years, logo } = this.props;
 		return (
 			<div className="row">
 				<div className="col-md-1">
-					<Logo icon={this.props.logo} />
+					<Logo icon={logo} />
 				</div>
 				<div className="col-md-11">
-					<h5 className="fw-600">{this.props.school}</h5>
-					<h5 className="fw-400">{this.props.degrees}</h5>
-					<h6>{this.props.years}</h6>
+					<h5 className="fw-600">{school}</h5>
+					<h5 className="fw-400">{degrees}</h5>
+					<h6>{years}</h6>
 				</div>
 			</div>
 		);

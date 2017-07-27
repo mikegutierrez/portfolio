@@ -23,11 +23,12 @@ class SectionTitle extends Component {
 	}
 
 	render() {
-		const classes = this.props.classes.join(' ');
+		const { title, classes } = this.props;
+		const classList = classes.join(' ');
 		return (
-			<div className={classnames('margin-bottom', { [classes]: classes })}>
+			<div className={classnames('margin-bottom', { [classes]: classList })}>
 				<div className="h4 fw-400 text-uppercase padding-bottom-s margin-top-0 margin-bottom-0">
-					{this.props.title}
+					{title}
 				</div>
 				<div className="underline-s"></div>
 			</div>

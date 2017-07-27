@@ -20,15 +20,16 @@ class Skills extends Component {
 	}
 
 	render() {
-		const technical = this.formatList(this.props.technical);
-		const organizational = this.formatList(this.props.organizational);
+		const { technical, organizational } = this.props;
+		const technicalSkills = this.formatList(technical);
+		const organizationalSkills = this.formatList(organizational);
 		return (
 			<div className="row">
 				<div className="col-md-12">
-					{ technical }
+					{ technicalSkills }
 				</div>
 				<div className="col-md-12">
-					{ organizational }
+					{ organizationalSkills }
 				</div>
 			</div>
 		);
