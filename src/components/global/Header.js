@@ -26,7 +26,7 @@ class Header extends Component {
 		const { location } = this.props;
 		const headerStyle = classnames('background',
 		{ 'bg-code': location.pathname === '/' },
-		{ 'bg-animated': location.pathname === '/projects' },
+		{ 'bg-sanddollar': location.pathname === '/projects' },
 		{ 'bg-mountains': location.pathname === '/contact' });
 		return (
 			<div id="header">
