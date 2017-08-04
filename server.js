@@ -1,4 +1,4 @@
-const SERVER_PORT = process.env.PORT || 3000;
+const SERVER_PORT = process.env.PORT || 8080;
 const path = require('path');
 const favicon = require('serve-favicon');
 const express = require('express');

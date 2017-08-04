@@ -2,7 +2,6 @@
 .DS_Store?
 *.log
 npm-debug.log*
-build
 .npm
 .eslintcache
 node_modules
