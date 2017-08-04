@@ -71,7 +71,7 @@
 "use strict";
 
 
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\" />\n\t\t<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t\t<title>Mike Gutierrez</title>\n\t</head>\n\t<body>\n\t\t<div id=\"app\"></div>\n\t</body>\n</html>\n";
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\" />\n\t\t<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t\t<title>Mike Gutierrez - Front End Software Engineer</title>\n\t</head>\n\t<body>\n\t\t<div id=\"app\"></div>\n\t</body>\n</html>\n";
 
 /***/ })
 

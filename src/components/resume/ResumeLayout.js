@@ -74,7 +74,7 @@ class ResumeLayout extends Component {
 			<div id="resume">
 				<div className="row margin-bottom-lg section">
 					<div className="col-md-12">
-						<SectionTitle title="Experience" classes={['inline-block', 'margin-0']}/>
+						<SectionTitle title="Experience" classes={['inline-block margin-0']}/>
 						<form
 							className="inline-block pull-right hidden-xs"
 							target="_blank"
