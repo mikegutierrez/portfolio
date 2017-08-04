@@ -57,13 +57,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/build\/assets\/images\/bg-sanddollar.jpg": {
-		"fileType": 16384,
+	"\/build\/assets\/images\/bg-sanddollar-mobile.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.16412e+07,
-		"inputAbbreviatedPath": "\/build\/assets\/images\/bg-sanddollar.jpg",
-		"outputAbbreviatedPath": "\/build\/assets\/images\/bg-sanddollar.jpg",
+		"initialSize": 3.11631e+06,
+		"inputAbbreviatedPath": "\/build\/assets\/images\/bg-sanddollar-mobile.png",
+		"outputAbbreviatedPath": "\/build\/assets\/images\/bg-sanddollar-mobile.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -75,17 +75,6 @@
 		"initialSize": 1.27746e+07,
 		"inputAbbreviatedPath": "\/build\/assets\/images\/bg-sanddollar.png",
 		"outputAbbreviatedPath": "\/build\/assets\/images\/bg-sanddollar.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/build\/assets\/images\/bg-yosemite.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.32718e+07,
-		"inputAbbreviatedPath": "\/build\/assets\/images\/bg-yosemite.jpg",
-		"outputAbbreviatedPath": "\/build\/assets\/images\/bg-yosemite.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -145,17 +134,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/build\/assets\/images\/sanddollar.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.16412e+07,
-		"inputAbbreviatedPath": "\/build\/assets\/images\/sanddollar.jpg",
-		"outputAbbreviatedPath": "\/build\/assets\/images\/sanddollar.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/build\/assets\/images\/shadsuite.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -174,17 +152,6 @@
 		"initialSize": 127684,
 		"inputAbbreviatedPath": "\/build\/assets\/images\/shadsuite2.png",
 		"outputAbbreviatedPath": "\/build\/assets\/images\/shadsuite2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/build\/assets\/images\/shcreativesuite.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 44164,
-		"inputAbbreviatedPath": "\/build\/assets\/images\/shcreativesuite.jpg",
-		"outputAbbreviatedPath": "\/build\/assets\/images\/shcreativesuite.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -240,39 +207,6 @@
 		"initialSize": 1.8044e+06,
 		"inputAbbreviatedPath": "\/build\/assets\/images\/tasklist.png",
 		"outputAbbreviatedPath": "\/build\/assets\/images\/tasklist.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/build\/assets\/images\/tasklist1.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 655530,
-		"inputAbbreviatedPath": "\/build\/assets\/images\/tasklist1.png",
-		"outputAbbreviatedPath": "\/build\/assets\/images\/tasklist1.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/build\/assets\/images\/tasklist2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 671001,
-		"inputAbbreviatedPath": "\/build\/assets\/images\/tasklist2.png",
-		"outputAbbreviatedPath": "\/build\/assets\/images\/tasklist2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/build\/assets\/images\/yosemite.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.32718e+07,
-		"inputAbbreviatedPath": "\/build\/assets\/images\/yosemite.jpg",
-		"outputAbbreviatedPath": "\/build\/assets\/images\/yosemite.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -391,6 +325,17 @@
 		"initialSize": 1.35324e+07,
 		"inputAbbreviatedPath": "\/src\/assets\/images\/bg-mountains.png",
 		"outputAbbreviatedPath": "\/src\/assets\/images\/bg-mountains.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/src\/assets\/images\/bg-sanddollar-mobile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.11631e+06,
+		"inputAbbreviatedPath": "\/src\/assets\/images\/bg-sanddollar-mobile.png",
+		"outputAbbreviatedPath": "\/src\/assets\/images\/bg-sanddollar-mobile.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1

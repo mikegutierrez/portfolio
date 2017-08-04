@@ -33,7 +33,7 @@ class Project extends Component {
 				<div className="col-md-12">
 					<SectionTitle title={title} classes={['inline-block']}/>
 				</div>
-				<div className="col-md-4 col-sm-12 margin-top margin-bottom">
+				<div className="col-md-4 col-sm-12 margin-bottom project-image-wrapper">
 					{
 
 						images.map((image, index) => {
