@@ -7,7 +7,7 @@ class Project extends Component {
 	static get propTypes() {
 		return {
 			title: PropTypes.string.isRequired,
-			image: PropTypes.string.isRequired,
+			images: PropTypes.array.isRequired,
 			stack: PropTypes.array.isRequired,
 			description: PropTypes.string.isRequired,
 			url: PropTypes.string,
@@ -18,7 +18,7 @@ class Project extends Component {
 	static get defaultProps() {
 		return {
 			title: '',
-			image: '',
+			images: [],
 			stack: [],
 			description: '',
 			url: '',
@@ -27,20 +27,27 @@ class Project extends Component {
 	}
 
 	render() {
-		const { title, image, url, stack, description, github } = this.props;
+		const { title, images, url, stack, description, github } = this.props;
 		return (
 			<div className="row margin-bottom-lg project section">
 				<div className="col-md-12">
 					<SectionTitle title={title} classes={['inline-block']}/>
 				</div>
 				<div className="col-md-4 col-sm-12 margin-bottom">
-					<div className="project-image">
-						<img src={image} />
-						<div className="caption">
-							<div className="h6 text-uppercase margin-0">{title}</div>
-						</div>
-						<a href={url} target="_blank"></a>
-					</div>
+					{
+
+						images.map((image, index) => {
+							return (
+								<div className="project-image margin-bottom-s" key={index}>
+									<img src={image} />
+									<div className="caption">
+										<div className="h6 text-uppercase margin-0">{title}</div>
+									</div>
+									<a href={url} target="_blank"></a>
+								</div>
+							);
+						})
+					}
 				</div>
 				<div className="col-md-8 col-sm-12">
 					<div className="project-tags">

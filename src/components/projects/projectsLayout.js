@@ -12,7 +12,7 @@ class ProjectsLayout extends Component {
 				return (
 					<Project
 						title={project.title}
-						image={project.image}
+						images={project.images}
 						url={project.url}
 						stack={project.stack}
 						description={project.description}
