@@ -13,7 +13,7 @@ export const projects = [
 			{ name: 'Less', url: 'http://lesscss.org/' },
 			{ name: 'Webpack', url: 'https://webpack.github.io/' }
 		],
-		description: 'This project was built to familiarize myself with spread syntax and have some fun styling with CSS. It\’s a straight forward task list with a basic set of requirements, allowing users to create, edit and delete to-do items.',
+		description: 'This project was built to familiarize myself with spread syntax and to have some fun styling with CSS. It\’s a straight forward task list with a basic set of requirements, allowing users to create, edit and delete to-do items.',
 		images: [image_taskList],
 		url: 'http://www.tasklist.mikecgutierrez.com',
 		github: 'https://github.com/mikegutierrez/tasklist'
