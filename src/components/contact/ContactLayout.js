@@ -20,7 +20,7 @@ class ContactLayout extends Component {
 
 	render() {
 		const { formSuccess, actions } = this.props;
-		const copy = 'Hey, thanks for visiting. Tell me about your next project. Be sure to include as many details about the concept and design as possible. The more, the better!';
+		const copy = 'Hey, thanks for visiting. I\'m currently looking for full time work as a front end engineer. Tell me all about your team and any available positions. Be sure to include as many details as possible. The more, the better!';
 		return (
 			<div>
 				<div className="row center-content">

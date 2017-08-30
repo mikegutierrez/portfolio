@@ -13,7 +13,7 @@ export const projects = [
 			{ name: 'Less', url: 'http://lesscss.org/' },
 			{ name: 'Webpack', url: 'https://webpack.github.io/' }
 		],
-		description: 'This project was built to get familiar using spread syntax with arrays. It\'s a striaght forward task list that won\'t allow blanks, hooks up to the enter key, has a delete button and editable tasks.',
+		description: 'This project was built to familiarize myself with spread syntax and have some fun styling with CSS. It\’s a straight forward task list with a basic set of requirements, allowing users to create, edit and delete to-do items.',
 		images: [image_taskList],
 		url: 'http://www.tasklist.mikecgutierrez.com',
 		github: 'https://github.com/mikegutierrez/tasklist'
@@ -28,7 +28,7 @@ export const projects = [
 			{ name: 'Less', url: 'http://lesscss.org/' },
 			{ name: 'Webpack', url: 'https://webpack.github.io/' }
 		],
-		description: 'The SteelHouse Advertising Suite is a self service platform for designing and launcing dynamic retargeting advertsing campaigns. I cut my teeth on this project, building out the UI and organzing the application structure with the teams lead engineers. This project tied in our in-house styleguide of react components to maintain code and keep a consistent design standard.',
+		description: 'The SteelHouse Advertising Suite is a self service platform for launcing dynamic retargeting advertsing campaigns. I cut my teeth on this project, building out the UI from scratch at a fast pace and organzing the application structure with the teams lead engineers. Working on this project was an invaluable experience with countless lessons in product development, engineering, teamwork and business dynamics.',
 		images: [image_adSuite],
 		url: 'https://steelhouse.com/advertising-suite/'
 
@@ -42,7 +42,7 @@ export const projects = [
 			{ name: 'Less', url: 'http://lesscss.org/' },
 			{ name: 'Webpack', url: 'https://webpack.github.io/' }
 		],
-		description: 'The Creative Suite is software that gives anyone the ability to design retargeting advertising campaigns in minutes. I was invloved in three code basses that make up this product - A2, Creative Libary and Ad Builder. A2 is the front end XML markup language that SteelHouse ad units are built on. I was responsible for building out tags and coming up with new ways to improve the language. The Creative Library is like the app store for SteelHouse ad units. It holds a collection of templates users can select from. I helped build out the UI and integrate A2 for rendering template previews. The Ad Builder is a WYSIWYG editor for customizing A2 templates. Users can upload their own content from YouTube, Instagram or just about anywhere else they keep it, and use it in their campaigns without writing a line of code. My role in this project ranged from A2 code base changes to product strategy.',
+		description: 'The Creative Suite gives anyone the ability to design retargeting advertising campaigns in minutes. I was invloved in three code basses that make up this product: A2, Creative Libary and Ad Builder. A2 is the front end XML markup language that SteelHouse ad units are built on. I was responsible for building out tags and coming up with new ways to improve the language. The Creative Library houses a collection of templates users can select from to get their campaigns started. I helped build out the UI and integrate A2 for rendering template previews. The Ad Builder is a drag and drop editor for customizing A2 templates. Users can upload their own content from YouTube, Instagram or just about anywhere else for use in their campaigns without writing a line of code. My role in this project ranged from A2 code base changes to product strategy.',
 		images: [image_creativeSuite1, image_creativeSuite2, image_creativeSuite3],
 		url: 'https://steelhouse.com/creative-suite/'
 	},
