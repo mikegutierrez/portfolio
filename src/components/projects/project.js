@@ -1,31 +1,10 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 // Global components
 import SectionTitle from '../global/SectionTitle';
 
 class Project extends Component {
-	static get propTypes() {
-		return {
-			title: PropTypes.string.isRequired,
-			images: PropTypes.array.isRequired,
-			stack: PropTypes.array.isRequired,
-			description: PropTypes.string.isRequired,
-			url: PropTypes.string,
-			github: PropTypes.string
-		};
-	}
-
-	static get defaultProps() {
-		return {
-			title: '',
-			images: [],
-			stack: [],
-			description: '',
-			url: '',
-			github: ''
-		};
-	}
-
 	render() {
 		const { title, images, url, stack, description, github } = this.props;
 		return (
@@ -85,5 +64,23 @@ class Project extends Component {
 		);
 	}
 }
+
+Project.propTypes = {
+	title: PropTypes.string.isRequired,
+	images: PropTypes.array.isRequired,
+	stack: PropTypes.array.isRequired,
+	description: PropTypes.string.isRequired,
+	url: PropTypes.string,
+	github: PropTypes.string
+};
+
+Project.defaultProps = {
+	title: '',
+	images: [],
+	stack: [],
+	description: '',
+	url: '',
+	github: ''
+};
 
 export default Project;

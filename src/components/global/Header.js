@@ -1,22 +1,11 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { autoBindMethods } from '../../helpers/autoBindMethods';
 import classnames from 'classnames';
+import PropTypes from 'prop-types';
 
 import profilephoto from '../../assets/images/mike.jpg';
 
 class Header extends Component {
-	static get propTypes() {
-		return {
-			location: PropTypes.func
-		};
-	}
-
-	static get propTypes() {
-		return {
-			location: () => {}
-		};
-	}
-
 	constructor(props) {
 		super(props);
 		autoBindMethods(this);
@@ -53,5 +42,13 @@ class Header extends Component {
 		);
 	}
 }
+
+Header.propTypes = {
+	location: PropTypes.object
+};
+
+Header.defaultProps = {
+	location: {}
+};
 
 export default Header;

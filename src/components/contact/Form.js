@@ -1,22 +1,10 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { autoBindMethods } from '../../helpers/autoBindMethods';
 import classnames from 'classnames';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 
 class Form extends Component {
-	static get propTypes() {
-		return {
-			formSuccess: PropTypes.func
-		};
-	}
-
-	static get defaultProps() {
-		return {
-			formSuccess: () => {}
-		};
-	}
-
-
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -184,5 +172,13 @@ class Form extends Component {
 		);
 	}
 }
+
+Form.propTypes = {
+	formSuccess: PropTypes.func
+};
+
+Form.defaultProps = {
+	formSuccess: () => {}
+};
 
 export default Form;

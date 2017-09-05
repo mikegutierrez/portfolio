@@ -1,21 +1,10 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { autoBindMethods } from '../../helpers/autoBindMethods';
 import moment from 'moment';
 import classnames from 'classnames';
+import PropTypes from 'prop-types';
 
 class Footer extends Component {
-	static get propTypes() {
-		return {
-			location: PropTypes.func
-		};
-	}
-
-	static get propTypes() {
-		return {
-			location: () => {}
-		};
-	}
-
 	constructor(props) {
 		super(props);
 		autoBindMethods(this);
@@ -37,5 +26,13 @@ class Footer extends Component {
 		);
 	}
 }
+
+Footer.propTypes = {
+	location: PropTypes.object
+};
+
+Footer.defaultProps = {
+	location: {}
+};
 
 export default Footer;

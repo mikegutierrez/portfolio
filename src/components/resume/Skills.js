@@ -1,20 +1,7 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Skills extends Component {
-	static get propTypes() {
-		return {
-			technical: PropTypes.array.isRequired,
-			organizational: PropTypes.array.isRequired
-		};
-	}
-
-	static get defaultProps() {
-		return {
-			technical: [],
-			organizational: []
-		};
-	}
-
 	formatList(skills) {
 		return skills.join(', ').replace(/,(?=[^,]+$)/, ' and');
 	}
@@ -35,5 +22,15 @@ class Skills extends Component {
 		);
 	}
 }
+
+Skills.propTypes = {
+	technical: PropTypes.array.isRequired,
+	organizational: PropTypes.array.isRequired
+};
+
+Skills.defaultProps = {
+	technical: [],
+	organizational: []
+};
 
 export default Skills;

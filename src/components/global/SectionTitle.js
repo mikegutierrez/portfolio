@@ -1,21 +1,8 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import classnames from 'classnames';
+import PropTypes from 'prop-types';
 
 class SectionTitle extends Component {
-	static get propTypes() {
-		return {
-			title: PropTypes.string.isRequired,
-			classes: PropTypes.array
-		};
-	}
-
-	static get defaultProps() {
-		return {
-			title: '',
-			classes: []
-		};
-	}
-
 	componentWillReceiveProps(nextProps) {
 		this.setState({
 			classes: nextProps.classes || this.props.classes
@@ -35,5 +22,15 @@ class SectionTitle extends Component {
 		);
 	}
 }
+
+SectionTitle.propTypes = {
+	title: PropTypes.string.isRequired,
+	classes: PropTypes.array
+};
+
+SectionTitle.defaultProps = {
+	title: '',
+	classes: []
+};
 
 export default SectionTitle;

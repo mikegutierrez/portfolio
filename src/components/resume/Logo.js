@@ -1,18 +1,7 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Logo extends Component {
-	static get propTypes() {
-		return {
-			icon: PropTypes.string.isRequired
-		};
-	}
-
-	static get defaultProps() {
-		return {
-			icon: ''
-		};
-	}
-
 	render() {
 		return (
 			<img
@@ -23,5 +12,13 @@ class Logo extends Component {
 		);
 	}
 }
+
+Logo.propTypes = {
+	icon: PropTypes.string.isRequired
+};
+
+Logo.defaultProps = {
+	icon: ''
+};
 
 export default Logo;

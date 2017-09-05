@@ -1,34 +1,11 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import classnames from 'classnames';
+import PropTypes from 'prop-types';
 
 // Application components
 import Logo from './Logo';
 
 class Experience extends Component {
-	static get propTypes() {
-		return {
-			title: PropTypes.string.isRequired,
-			company: PropTypes.string.isRequired,
-			location: PropTypes.string.isRequired,
-			dates: PropTypes.string.isRequired,
-			tasks: PropTypes.array.isRequired,
-			logo: PropTypes.string,
-			classes: PropTypes.array
-		};
-	}
-
-	static get defaultProps() {
-		return {
-			title: '',
-			company: '',
-			location: '',
-			dates: '',
-			tasks: [],
-			logo: '',
-			classes: []
-		};
-	}
-
 	componentWillReceiveProps(nextProps) {
 		this.setState({
 			classes: nextProps.classes || this.props.classes
@@ -76,5 +53,25 @@ class Experience extends Component {
 		);
 	}
 }
+
+Experience.propTypes = {
+	title: PropTypes.string.isRequired,
+	company: PropTypes.string.isRequired,
+	location: PropTypes.string.isRequired,
+	dates: PropTypes.string.isRequired,
+	tasks: PropTypes.array.isRequired,
+	logo: PropTypes.string,
+	classes: PropTypes.array
+};
+
+Experience.defaultProps = {
+	title: '',
+	company: '',
+	location: '',
+	dates: '',
+	tasks: [],
+	logo: '',
+	classes: []
+};
 
 export default Experience;

@@ -1,27 +1,10 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 // Application components
 import Logo from './Logo';
 
 class Education extends Component {
-	static get propTypes() {
-		return {
-			school: PropTypes.string.isRequired,
-			degrees: PropTypes.string.isRequired,
-			years: PropTypes.string.isRequired,
-			logo: PropTypes.string
-		};
-	}
-
-	static get defaultProps() {
-		return {
-			school: '',
-			degrees: '',
-			years: '',
-			logo: ''
-		};
-	}
-
 	render() {
 		const { school, degrees, years, logo } = this.props;
 		return (
@@ -38,5 +21,19 @@ class Education extends Component {
 		);
 	}
 }
+
+Education.propTypes = {
+	school: PropTypes.string.isRequired,
+	degrees: PropTypes.string.isRequired,
+	years: PropTypes.string.isRequired,
+	logo: PropTypes.string
+};
+
+Education.defaultProps = {
+	school: '',
+	degrees: '',
+	years: '',
+	logo: ''
+};
 
 export default Education;
