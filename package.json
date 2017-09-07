@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "webpack --progress --watch --config webpack.dev.js",
     "server": "node server.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack -p --config webpack.prod.js"
   },
   "author": "Mike Gutierrez",
   "license": "ISC",
