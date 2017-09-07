@@ -1,4 +1,4 @@
-import image_taskList from '../../../assets/images/tasklist.png';
+import image_taskList from '../../../assets/images/tasklist.jpg';
 import image_adSuite from '../../../assets/images/shadsuite2.png';
 import image_creativeSuite1 from '../../../assets/images/shcreativesuite1.jpg';
 import image_creativeSuite2 from '../../../assets/images/shcreativesuite2.jpg';

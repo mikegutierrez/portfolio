@@ -4,7 +4,9 @@
   "description": "express react redux react-router webpack portfolio and resume website",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack"
+    "watch": "webpack --progress --watch --config webpack.dev.js",
+    "server": "node server.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "Mike Gutierrez",
   "license": "ISC",
@@ -17,7 +19,9 @@
     "eslint-plugin-jsx-a11y": "6.0.2",
     "eslint-plugin-react": "7.1.0",
     "eslint-plugin-you-dont-need-lodash-underscore": "6.3.1",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-merge": "^4.1.0"
   },
   "dependencies": {
     "axios": "0.16.2",
@@ -50,6 +54,7 @@
     "serve-favicon": "2.4.3",
     "style-loader": "0.18.2",
     "svgo": "0.7.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "url-loader": "0.5.9",
     "webpack": "3.3.0"
   },
