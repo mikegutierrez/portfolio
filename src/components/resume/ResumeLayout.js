@@ -69,7 +69,6 @@ class ResumeLayout extends Component {
 		const experience = this.mapExperience();
 		const education = this.mapEducation();
 		const skills = this.mapSkills();
-
 		return (
 			<div id="resume">
 				<div className="row margin-bottom-lg section">
