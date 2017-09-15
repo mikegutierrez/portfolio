@@ -17,12 +17,22 @@ html, body {
 	text-shadow: 1px 1px 1px rgba(0,0,0, 0.004);
 }
 
-
 #app {
 	position: relative;
 	height: 100%;
 	min-width: 320px;
 	cursor: default;
+}
+
+#app > div {
+	height: 100%;
+}
+
+.container {
+	&.contact {
+		height: calc(~"100% - 395px");
+		min-height: 620px;
+	}
 }
 
 .section {

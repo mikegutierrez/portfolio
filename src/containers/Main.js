@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { autoBindMethods } from '../helpers/autoBindMethods';
 import bindMapComponent from '../helpers/mapStateActionsToProps';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 // Global components
 import Header from '../components/global/Header';
@@ -17,10 +18,13 @@ class Main extends Component {
 	}
 
 	render() {
+		const containerStyle = classnames('container', {
+			'contact': this.props.location.pathname === '/contact'
+		});
 		return (
 			<div>
 				<Header {...this.props}/>
-				<div className="container">
+				<div className={containerStyle}>
 					<Menu />
 					{
 						React.cloneElement(
