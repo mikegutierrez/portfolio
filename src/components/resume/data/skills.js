@@ -1,24 +1,11 @@
 export const skills = [
-	{
-		technical: [
-			'React',
-			'Redux',
-			'Javascript',
-			'ES6',
-			'JQuery',
-			'CSS',
-			'HTML',
-			'LESS',
-			'Bootstrap',
-			'Webpack',
-			'ESLint'
-		],
-		organizational: [
-			'Git',
-			'Agile',
-			'JIRA',
-			'Trello',
-			'Zendesk'
-		]
-	}
+  {
+    strong: [
+      'React', 'Redux', 'Node', 'Javascript', 'ES6', 'HTML', 'CSS', 'Less', 'Webpack', 'Responsive Development', 'Mobile First Development', 'Component Library Development', 'TDD', 'OOP', 'Agile'
+
+    ],
+    experienced: [
+      'Web Sockets', 'WebRTC', 'OAuth', 'PostgreSQL', 'MongoDB', 'Git', 'Phantom.js', 'JQuery', 'Coffeescript', 'Heroku'
+    ]
+  }
 ];

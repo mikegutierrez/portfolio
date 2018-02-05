@@ -14,92 +14,91 @@ import { education } from './data/education';
 import { skills } from './data/skills';
 
 class ResumeLayout extends Component {
-	mapExperience() {
-		const lastPosition = experience.length - 1;
-		return (
-			experience.map((position, index) => {
-				return (
-					<Experience
-						title={position.title}
-						company={position.company}
-						location={position.location}
-						dates={position.dates}
-						tasks={position.tasks}
-						logo={position.logo}
-						classes={[(index === lastPosition ? '' : 'divider-line')]}
-						key={index}
-					/>
-				);
-			})
-		);
-	}
+  mapExperience() {
+    const lastPosition = experience.length - 1;
+    return (
+      experience.map((position, index) => {
+        return (
+          <Experience
+            title={position.title}
+            company={position.company}
+            location={position.location}
+            dates={position.dates}
+            tasks={position.tasks}
+            logo={position.logo}
+            classes={[(index === lastPosition ? '' : 'divider-line')]}
+            key={index}
+          />
+        );
+      })
+    );
+  }
 
-	mapEducation() {
-		return (
-			education.map((institution, index) => {
-				return (
-					<Education
-						school={institution.school}
-						degrees={institution.degrees}
-						years={institution.years}
-						logo={institution.logo}
-						key={index}
-					/>
-				);
-			})
-		);
-	}
+  mapEducation() {
+    return (
+      education.map((institution, index) => {
+        return (
+          <Education
+            school={institution.school}
+            degrees={institution.degrees}
+            years={institution.years}
+            logo={institution.logo}
+            key={index}
+          />
+        );
+      })
+    );
+  }
 
-	mapSkills() {
-		return (
-			skills.map((skill, index) => {
-				return (
-					<Skills
-						technical={skill.technical}
-						organizational={skill.organizational}
-						interests={skill.interests}
-						key={index}
-					/>
-				);
-			})
-		);
-	}
+  mapSkills() {
+    return (
+      skills.map((skill, index) => {
+        return (
+          <Skills
+            strong={skill.strong}
+            experienced={skill.experienced}
+            key={index}
+          />
+        );
+      })
+    );
+  }
 
-	render() {
-		const experience = this.mapExperience();
-		const education = this.mapEducation();
-		const skills = this.mapSkills();
-		return (
-			<div id="resume">
-				<div className="row margin-bottom-lg section">
-					<div className="col-md-12">
-						<SectionTitle title="Experience" classes={['inline-block margin-0']}/>
-						<form
-							className="inline-block pull-right hidden-xs"
-							target="_blank"
-							method="get"
-							action="/resume"
-						>
-							<button className="btn btn-primary" type="submit">Download Resume</button>
-						</form>
-						{ experience }
-					</div>
-				</div>
-				<div className="row margin-bottom-lg section">
-					<div className="col-md-12">
-						<SectionTitle title="Education"/>
-						{ education }
-					</div>
-				</div>
-				<div className="row margin-bottom-lg section">
-					<div className="col-md-12">
-						<SectionTitle title="Skills"/>
-						{ skills }
-					</div>
-				</div>
-			</div>
-		);
-	}
+  render() {
+    const experience = this.mapExperience();
+    const education = this.mapEducation();
+    const skills = this.mapSkills();
+    return (
+      <div id="resume">
+        <div className="row margin-bottom-lg section">
+          <div className="col-md-12">
+            <SectionTitle title="Technical Skills" />
+            {skills}
+          </div>
+        </div>
+        <div className="row margin-bottom-lg section">
+          <div className="col-md-12">
+            <SectionTitle title="Experience" classes={['inline-block margin-0']} />
+            <form
+              className="inline-block pull-right hidden-xs"
+              target="_blank"
+              method="get"
+              action="/resume"
+            >
+              <button className="btn btn-primary" type="submit">Download Resume</button>
+            </form>
+            {experience}
+          </div>
+        </div>
+        <div className="row margin-bottom-lg section">
+          <div className="col-md-12">
+            <SectionTitle title="Education" />
+            {education}
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default ResumeLayout;
