@@ -1,88 +1,28 @@
+#project-container {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  justify-content: space-between;
+  width: 65%;
+}
+
+.title-container {
+  width: 100%;
+}
+
 .project {
-	.project-image-wrapper {
-		margin-top: .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px !important;
 
-		.project-image {
-			.source-sans-pro;
-			position: relative;
-			overflow: hidden;
-			// min-width: 220px;
-			max-width: 738px;
-			max-height: 200px;
-			width: 100%;
-			color: white;
-			background-color: black;
+  .project-image {
+    max-width: 330px;
+    max-height: 200px;
+  }
 
-			*, &::before, &::after {
-				-webkit-transition: @trans-all400;
-				-moz-transition: @trans-all400;
-				transition: @trans-all400;
-			}
-
-			&::before, &::after {
-				position: absolute;
-				top: 20px;
-				right: 20px;
-				content: '';
-				background-color: white;
-				opacity: 0;
-			}
-
-			img { width: 100%; }
-
-			&::before {
-				width: 0;
-				height: 1px;
-			}
-
-			&::after {
-				width: 1px;
-				height: 0;
-			}
-
-			.caption {
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				padding: @space;
-			}
-
-			.h6 { opacity: 0; }
-
-			a {
-				position: absolute;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-			}
-
-			&:hover {
-				img {
-					filter: alpha(opacity=20);
-					opacity: 0.2;
-				}
-
-				&::before, &::after {
-					opacity: 1;
-					-webkit-transition-delay: 0.25s;
-					transition-delay: 0.25s;
-				}
-
-				&::before { width: 30px; }
-
-				&::after { height: 30px; }
-
-				.h6 {
-					opacity: 1;
-					-webkit-transition-delay: 0.35s;
-					transition-delay: 0.35s;
-				}
-			}
-		}
-	}
-
-	.project-description { font-size: 14px; }
+	.project-description { 
+    font-size: 14px; 
+  }
 
 	.project-tags {
 		a {
@@ -91,7 +31,7 @@
 			margin: 0 @space-s;
 			display: inline-block;
 
-			&::before, &::after {
+			&::before {
 				position: absolute;
 				top: 100%;
 				left: 0;
@@ -101,36 +41,9 @@
 				opacity: 0.2;
 				content: '';
 
-				-webkit-transition: -webkit-transform 0.3s;
-				-moz-transition: -moz-transform 0.3s;
-				transition: transform 0.3s;
-
 				-webkit-transform: scale(0.65);
 				-moz-transform: scale(0.65);
 				transform: scale(0.65);
-			}
-
-			&::after {
-				opacity: 0;
-				transition: top 0.3s, opacity 0.3s, transform 0.3s;
-			}
-
-			&:hover, &:focus {
-				&::before, &::after {
-					-webkit-transform: scale(0.85);
-					-moz-transform: scale(0.85);
-					transform: scale(0.85);
-				}
-
-				&::after {
-					top: 0;
-					opacity: 0.2;
-				}
-			}
-
-			&:first-of-type {
-				margin-left: 0;
-				padding-left: 0;
 			}
 		}
 	}

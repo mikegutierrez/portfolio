@@ -12,7 +12,7 @@ class Skills extends Component {
     const experiencedSkills = this.formatList(experienced);
     return (
       <div className="row">
-        <div className="col-md-12">
+        <div className="col-md-12 margin-bottom-m">
           <strong>Strong:</strong> {strongSkills}
         </div>
         <div className="col-md-12">

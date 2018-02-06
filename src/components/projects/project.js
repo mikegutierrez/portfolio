@@ -5,82 +5,65 @@ import PropTypes from 'prop-types';
 import SectionTitle from '../global/SectionTitle';
 
 class Project extends Component {
-	render() {
-		const { title, images, url, stack, description, github } = this.props;
-		return (
-			<div className="row margin-bottom-lg project section">
-				<div className="col-md-12">
-					<SectionTitle title={title} classes={['inline-block']}/>
-				</div>
-				<div className="col-md-4 col-sm-12 margin-bottom project-image-wrapper">
-					{
-
-						images.map((image, index) => {
-							return (
-								<div className="project-image margin-bottom-s" key={index}>
-									<img src={image} />
-									<div className="caption">
-										<div className="h6 text-uppercase margin-0">{title}</div>
-									</div>
-									<a href={url} target="_blank"></a>
-								</div>
-							);
-						})
-					}
-				</div>
-				<div className="col-md-8 col-sm-12">
-					<div className="project-tags">
-						{
-							stack.map((tech, index) => {
-								return <a href={tech.url} target="_blank" key={index}>{tech.name}</a>;
-							})
-						}
-					</div>
-					<div className="row margin-top">
-						<div className="col-md-12 project-description">{description}</div>
-					</div>
-					<div className="row margin-top-m">
-						<div className="col-md-12">
-							<ul className="list-inline">
-								{url &&
-								<li>
-									<a href={url} target="_blank" className="small margin-right-lg">
-										Visit the project &gt;&gt;
+  render() {
+    const { title, image, url, stack, description, github } = this.props;
+    return (
+      <div className="margin-bottom project section">
+        <div className="title-container">
+          <SectionTitle title={title} classes={['inline-block']} />
+        </div>
+        <img className="project-image margin-bottom-s" src={image} />
+        <div className="project-tags">
+          {
+            stack.map((tech, index) => {
+              return <a href={tech.url} target="_blank" key={index}>{tech.name}</a>;
+            })
+          }
+        </div>
+        <div className="margin-top">
+          <div className="project-description">{description}</div>
+        </div>
+        <div className="margin-top-m">
+          <div>
+            <ul className="list-inline">
+              {url &&
+                <li>
+                  <a href={url} target="_blank" className="small margin-right-lg">
+                    Visit the project &gt;&gt;
 									</a>
-								</li>
-								}
-								{github &&
-								<li>
-									<a href={github} target="_blank" className="small">
-										View the code on Github &gt;&gt;
+                </li>
+              }
+              {github &&
+                <li>
+                  <a href={github} target="_blank" className="small">
+                    View the code on Github &gt;&gt;
 									</a>
-								</li>
-								}
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		);
-	}
+                </li>
+              }
+            </ul>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 Project.propTypes = {
-	title: PropTypes.string.isRequired,
-	images: PropTypes.array.isRequired,
-	stack: PropTypes.array.isRequired,
-	description: PropTypes.string.isRequired,
-	url: PropTypes.string,
-	github: PropTypes.string
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  stack: PropTypes.array.isRequired,
+  description: PropTypes.string.isRequired,
+  url: PropTypes.string,
+  github: PropTypes.string
 };
 
 Project.defaultProps = {
-	title: '',
-	images: [],
-	stack: [],
-	description: '',
-	url: '',
-	github: ''
+  title: '',
+  image: '',
+  stack: [],
+  description: '',
+  url: '',
+  github: ''
 };
 
 export default Project;
