@@ -77,7 +77,7 @@ export const projects = [
 
   },
   {
-    title: 'SteelHouse Advertising Suite',
+    title: 'SteelHouse Ad Suite',
     stack: [
       { name: 'React', url: 'https://facebook.github.io/react/' },
       { name: 'Redux', url: 'http://redux.js.org/' },

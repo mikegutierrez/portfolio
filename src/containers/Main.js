@@ -12,39 +12,39 @@ import Footer from '../components/global/Footer';
 import * as Actions from '../actions';
 
 class Main extends Component {
-	constructor(props) {
-		super(props);
-		autoBindMethods(this);
-	}
+  constructor(props) {
+    super(props);
+    autoBindMethods(this);
+  }
 
-	render() {
-		const containerStyle = classnames('container', {
-			'contact': this.props.location.pathname === '/contact'
-		});
-		return (
-			<div>
-				<Header {...this.props}/>
-				<div className={containerStyle}>
-					<Menu />
-					{
-						React.cloneElement(
-							this.props.children,
-							{ ...this.props }
-						)
-					}
-				</div>
-				<Footer {...this.props}/>
-			</div>
-		);
-	}
+  render() {
+    const containerStyle = classnames('container', 'margin-top-lg', {
+      'contact': this.props.location.pathname === '/contact'
+    });
+    return (
+      <div>
+        <Header {...this.props} />
+        <div className={containerStyle}>
+          {/* <Menu /> */}
+          {
+            React.cloneElement(
+              this.props.children,
+              { ...this.props }
+            )
+          }
+        </div>
+        <Footer {...this.props} />
+      </div>
+    );
+  }
 }
 
 Main.propTypes = {
-	children: PropTypes.object
+  children: PropTypes.object
 };
 
 Main.defaultProps = {
-	children: {}
+  children: {}
 };
 
 export default bindMapComponent(Main)(Actions, ['formSuccess']);
