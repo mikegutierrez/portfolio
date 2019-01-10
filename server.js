@@ -14,7 +14,7 @@ app.use(favicon(path.join(__dirname, '/build/assets/images', 'favicon.ico')));
 app.use('/build', express.static(path.join(__dirname, '/build/')));
 
 app.get('/resume', (req, res) => {
-  res.download(path.join(__dirname, 'src/assets/documents/Gutierrez_Mike_Resume_2018.pdf'));
+  res.download(path.join(__dirname, 'src/assets/documents/Gutierrez_Mike_Resume_2019.pdf'));
 });
 
 app.get('*', (req, res) => {

@@ -1,7 +1,21 @@
 import logoPC from '../../../assets/images/logo-PC.png';
 import logoSH from '../../../assets/images/logo-SH.png';
+import logoUK from '../../../assets/images/logo-UK.png';
 
 export const experience = [
+  {
+    title: 'Front End Software Engineer',
+    company: 'UpKeep Maintenance Management',
+    dates: 'May 2018 – Present',
+    location: 'Los Angeles, California',
+    tasks: [
+      'Migrated founder code from Angular 1 to React 16 utilizing React Virtualized to efficiently render large lists of data, incorporating infinite loading to seamlessly fetch data on scroll and Redux for controlling modals, alert messages and global UI elements, improving the scalability and longevity of UpKeep’s core product, the Work Order List View',
+      'Contributed to a GraphQL API gateway that communicates with a Node API and Parse database by writing queries to declaratively fetch work order, location and user data, mutations to manipulate server-side data and types to describe the set of data available for the client, eliminating over fetching and minimizing the data transferred between server and client',
+      'Implemented an activity feed component from front end to back end by building Node API endpoints to interface with GraphQL queries and mutations, enabling users to read, post and delete updates to work orders on the React front end',
+      'Created Styled Components to isolate and conditionally control the presentation of UI elements based on prop definitions'
+    ],
+    logo: logoUK
+  },
   {
     title: 'Full Stack Software Engineer',
     company: 'PeerConnect',
@@ -14,7 +28,6 @@ export const experience = [
       'Utilized React, React Router, Webpack and Less to build and design peer-connect.io'
     ],
     logo: logoPC
-
   },
   {
     title: 'Front End Software Engineer',
@@ -31,7 +44,6 @@ export const experience = [
       'Implemented the Intercom Javascript library in Node and React, employing API methods and webhooks to monitor user registration and application failure points, allowing customer service to send targeted messages to maintain engagement'
     ],
     logo: logoSH
-
   },
   {
     title: 'Lead Web Developer',
@@ -44,7 +56,6 @@ export const experience = [
       'Hired and trained a team of five developers to write functional code to dynamically display relevant products to e-commerce customers in retargeting ad units using SteelHouse’s proprietary language, A2'
     ],
     logo: logoSH
-
   },
   {
     title: 'Web Developer',
@@ -55,6 +66,5 @@ export const experience = [
       'Developed retargeting ad units using A2 to display dynamic e-commerce products and CSS to achieve pixel perfect design'
     ],
     logo: logoSH
-
   }
 ];

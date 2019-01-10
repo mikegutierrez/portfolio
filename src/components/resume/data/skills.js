@@ -1,7 +1,7 @@
 export const skills = [
   {
     strong: [
-      'React', 'Redux', 'Node', 'Javascript', 'ES6', 'HTML', 'CSS', 'Less', 'Webpack', 'Responsive Development', 'Mobile First Development', 'Component Library Development', 'TDD', 'OOP', 'Agile'
+      'React', 'Redux', 'Node', 'GraphQL', 'Javascript', 'ES6', 'HTML', 'CSS', 'Less', 'Styled Components', 'Webpack', 'Responsive Development', 'Mobile First Development', 'Component Library Development', 'TDD', 'OOP', 'Agile'
 
     ],
     experienced: [

@@ -22,10 +22,3 @@ Resume project built on Express React, Redux & Webpack.
 * [React Router](https://github.com/ReactTraining/react-router/tree/master/packages/react-router) - Handles front end routing
 * [Serve Favicon](https://github.com/expressjs/serve-favicon) - Middleware for serving favicon with node
 * [Webpack](https://github.com/webpack/webpack) - Build tool that bundles modules for usage in a browser
-
-
-## Acknowledgments
-
-* [Dean Sacramone](https://github.com/dsacramone) for his helper functions used in this project.
-	* [autoBindMethods](https://github.com/mikegutierrez/portfolio/blob/master/src/helpers/autoBindMethods.js) - Prevents the need for repetitive -> method = method.bind(this)
-	* [mapStateActionsToProps](https://github.com/mikegutierrez/portfolio/blob/master/src/helpers/mapStateActionsToProps.js) - Connects component with actions & state, by attaching to the props of the component
