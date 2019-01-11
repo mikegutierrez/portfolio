@@ -5,7 +5,7 @@ export const skills = [
 
     ],
     experienced: [
-      'Web Sockets', 'WebRTC', 'OAuth', 'PostgreSQL', 'MongoDB', 'Git', 'Phantom.js', 'JQuery', 'Coffeescript'
+      'Web Sockets', 'WebRTC', 'OAuth', 'PostgreSQL', 'MongoDB', 'Git', 'Phantom.js', 'JQuery', 'Coffeescript', 'Heroku'
     ]
   }
 ];
