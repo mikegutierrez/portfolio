@@ -6,7 +6,6 @@ import classnames from 'classnames';
 
 // Global components
 import Header from '../components/global/Header';
-import Menu from '../components/global/Menu';
 import Footer from '../components/global/Footer';
 
 import * as Actions from '../actions';
@@ -25,7 +24,6 @@ class Main extends Component {
       <div>
         <Header {...this.props} />
         <div className={containerStyle}>
-          {/* <Menu /> */}
           {
             React.cloneElement(
               this.props.children,
