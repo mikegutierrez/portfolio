@@ -4,12 +4,12 @@ import logoUK from '../../../assets/images/logo-UK.png';
 
 export const experience = [
   {
-    title: 'Front End Software Engineer',
+    title: 'Software Engineer',
     company: 'UpKeep Maintenance Management',
     dates: 'May 2018 – Present',
     location: 'Los Angeles, California',
     tasks: [
-      'Migrated founder code from Angular 1 to React 16 utilizing React Virtualized to efficiently render large lists of data, incorporating infinite loading to seamlessly fetch data on scroll and Redux for controlling modals, alert messages and global UI elements, improving the scalability and longevity of UpKeep’s core product, the Work Order List View',
+      'Migrated legacy codebase from Angular 1 to React 16 utilizing React Virtualized to efficiently render large lists of data, incorporating infinite loading to seamlessly fetch data on scroll and Redux for controlling modals, alert messages and global UI elements, improving the scalability and longevity of UpKeep’s core product, the Work Order List View',
       'Contributed to a GraphQL API gateway that communicates with a Node API by writing queries to declaratively fetch data, mutations to manipulate server-side data and types to describe the set of data available for the client, eliminating over fetching and minimizing the data transferred between server and client for both web and mobile platforms',
       'Developed several full stack features by building Node API endpoints to interface with GraphQL queries and mutations, using Apollo Client to send and fetch data on the React front end, enabling users to read and manipulate work order data',
       'Created Styled Components to isolate and conditionally control the presentation of UI elements based on prop definitions'
